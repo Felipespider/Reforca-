@@ -1,0 +1,22 @@
+.resultado_gab{
+    position: absolute;
+    top: 35%; /* Ajusta o deslocamento vertical */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #4c0468;
+    z-index: 4;
+}
+
+.resultado_alter{
+    position: absolute;
+    top: 45%; /* Ajusta o deslocamento vertical */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #4c0468;
+    z-index: 4;
+}
+

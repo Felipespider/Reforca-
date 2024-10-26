@@ -1,0 +1,126 @@
+/* Estilo para a imagem de fundo */
+.background_image {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Imagem inicial com efeito de desvanecimento */
+.icone_inicial {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+    mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+    filter: brightness(0.9); /* Reduz claridade para destacar ícones */
+    transition: opacity 2s ease;
+}
+
+/* Grupo de ícones sobrepostos */
+.imagens_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    top: -27rem;
+    z-index: 2;
+    padding: 0 2rem;
+}
+
+/* Estilo do avatar */
+.avatar {
+    height: 8rem;
+    width: 8rem;
+    z-index: 3;
+}
+
+/* Estilo da logo */
+.reforca_main {
+    height: 7rem;
+    width: 9rem;
+    z-index: 3;
+    padding-right: 4rem;
+}
+
+/* Texto de saudação */
+.text_begin {
+    color: #4c0468;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin-top: -25rem;
+    margin-left: 2rem;
+    z-index: 4;
+}
+
+button{
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none; /*Nova*/
+}
+
+/* Estilos comuns para as divisões de botões */
+.button_div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    z-index: 3;
+    position: relative;
+}
+
+.button_icon {
+    padding-left: -5rem;
+    height: 5rem;
+    width: 5rem;
+    margin-right: 1rem;
+    pointer-events: auto; /*Nova*/
+}
+
+.button_text {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #4c0468;
+}
+
+/* Linhas de divisão estilizadas */
+hr {
+    border: none;
+    height: 2px;
+    background-color: #4c0468;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.icone_som{
+    position: absolute;
+    top: 22.3rem;
+    right: 2rem;
+    margin-top: -4%;
+    margin-left: 87%;
+    width: 35px;
+    height: 35px;
+    z-index: 7;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}   
+
+#som_button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

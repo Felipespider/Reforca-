@@ -1,0 +1,151 @@
+.background_image {
+    position: relative;
+    width: 100%;
+    height: 30rem; /* Limita a altura da imagem */
+    overflow: hidden; /* Garante que nada além da altura será mostrado */
+    z-index: 1; /* Fica atrás de todos os outros elementos */
+}
+ 
+.icone_inicial {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none; /* Permite clicar nos elementos acima */
+    mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+}
+
+
+.back_header{
+    width: 0;
+    height: 0;
+}
+
+
+.back_img{
+    height: 60px;
+    z-index: 2;
+    position: relative;
+    top: -27rem;
+}
+
+
+.logo_container {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3; /* Certifique-se que o logo fique acima da imagem de fundo */
+    text-align: center;
+    pointer-events: auto; /* Garante que a logo seja interativa */
+}
+
+.icone_logo {
+    width: 200px;
+    padding: auto;  
+}
+
+.question_num {
+    position: absolute;
+    top: 35%; /* Ajusta o deslocamento vertical */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #4c0468;
+    z-index: 4;
+}
+
+.question_text{
+    position: absolute;
+    color: #4c0468;
+    z-index: 5;
+    top: 50%; /* Ajusta o deslocamento vertical */
+    left: 2%;
+    font-family: Arial, sans-serif;
+}
+
+.question_form{
+    position: absolute;
+    top: 65%;
+    left: 20px;
+}
+
+
+
+/* Aplica estilo roxo a todos os inputs tipo radio */
+.input_alternative {
+    position: absolute;
+    appearance: none; /* Remove o estilo padrão do rádio */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4c0468; /* Borda roxa */
+    border-radius: 50%; /* Forma circular */
+    background-color: #4c0468; /* Fundo roxo */
+    cursor: pointer;
+}
+
+/* Aplica o estilo amarelo ao input quando selecionado */
+.input_alternative:checked {
+    background-color: #ba8720; /* Fundo amarelo */
+    border-color: #4c0468; /* Borda amarela */
+}
+
+
+.label_alternative{
+    position: relative;
+    bottom: -5px;
+    right: -30px;
+    font-family: Arial, sans-serif;
+    color: #4c0468;
+    z-index: 6;
+    top: 40%;
+}
+
+.confirm_button{
+    position: relative;
+    text-decoration: none;
+    background-color: #4c0468;
+    border: 2px solid #4c0468 ;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.1rem;
+    height: 45px;
+    bottom: -7rem;
+    right: -40rem;
+    text-align: center;
+    z-index: 7;
+}
+
+.button_click{
+    display: block;
+    width: 200px;
+    background-color: #4c0468;
+    color: white;
+    text-decoration: none;
+}
+
+.icone_som{
+    position: absolute;
+    top: 22.3rem;
+    right: 3rem;
+    margin-top: -5%;
+    margin-left: 87%;
+    width: 35px;
+    height: 35px;
+    z-index: 8;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}   
+
+#som_button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
